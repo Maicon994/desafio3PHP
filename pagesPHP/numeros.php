@@ -11,7 +11,7 @@ echo "
 
 // --- EXEMPLO 1 ---
 echo "<h3>Exemplo 1: number_format()</h3>";
-$preco = 1250.75;
+$preco = 2534.75;
 echo "<p>Número original: <code>$preco</code></p>";
 echo "<div class='resultado'>";
 echo "Formato BR: R$ " . number_format($preco, 2, ',', '.') . "<br>";
@@ -24,9 +24,9 @@ echo "<hr>";
 echo "<h3>Exemplo 2: round()</h3>";
 echo "<p>Arredondamentos do mais próximo:</p>";
 echo "<div class='resultado'>";
-echo "round(4.3) -> " . round(4.3) . "<br>";
-echo "round(4.7) -> " . round(4.7) . "<br>";
-echo "round(2.3456, 2) -> " . round(2.3456, 2);
+echo "round(2.3) -> " . round(2.3) . "<br>";
+echo "round(6.7) -> " . round(6.7) . "<br>";
+echo "round(1.520, 7) -> " . round(1.520, 7);
 echo "</div>";
 
 echo "<hr>";
@@ -34,8 +34,8 @@ echo "<hr>";
 // --- EXEMPLO 3 ---
 echo "<h3>Exemplo 3: ceil() (Arredonda para cima)</h3>";
 echo "<div class='resultado'>";
-echo "ceil(4.3) -> " . ceil(4.3) . "<br>";
-echo "ceil(4.0) -> " . ceil(4.0);
+echo "ceil(10.2) -> " . ceil(10.2) . "<br>";
+echo "ceil(2.5) -> " . ceil(2.5);
 echo "</div>";
 
 echo "<hr>";
@@ -43,16 +43,16 @@ echo "<hr>";
 // --- EXEMPLO 4 ---
 echo "<h3>Exemplo 4: floor() (Arredonda para baixo)</h3>";
 echo "<div class='resultado'>";
-echo "floor(4.7) -> " . floor(4.7) . "<br>";
-echo "floor(4.0) -> " . floor(4.0);
+echo "floor(10.2) -> " . floor(10.2) . "<br>";
+echo "floor(2.5) -> " . floor(2.5);
 echo "</div>";
 
 echo "<hr>";
 
 // --- EXEMPLO 5 ---
 echo "<h3>Exemplo 5: abs() (Valor Absoluto / Módulo)</h3>";
-$diferenca = 10 - 25;
-echo "<p>Operação: <code>10 - 25 = $diferenca</code></p>";
+$diferenca = 20 - 55;
+echo "<p>Operação: <code>20 - 55 = $diferenca</code></p>";
 echo "<div class='resultado'>Resultado: " . abs($diferenca) . "</div>";
 
 echo "<hr>";
@@ -66,20 +66,20 @@ echo "<hr>";
 
 // --- EXEMPLO 7 ---
 echo "<h3>Exemplo 7: max() (Maior Valor)</h3>";
-$notas = [7.5, 9.0, 6.2];
+$notas = [4.4, 8.5, 9.1];
 echo "<div class='resultado'>";
-echo "Maior de (5, 10, 2, 8) -> " . max(5, 10, 2, 8) . "<br>";
-echo "Maior do array [7.5, 9.0, 6.2] -> " . max($notas);
+echo "Maior de (25, 10, 1, 118) -> " . max(25, 10, 1, 118) . "<br>";
+echo "Maior do array [[4.4, 8.5, 9.1] -> " . max($notas);
 echo "</div>";
 
 echo "<hr>";
 
 // --- EXEMPLO 8 ---
 echo "<h3>Exemplo 8: min() (Menor Valor)</h3>";
-$precos = [19.99, 15.50, 22.00];
+$precos = [4.4, 8.5, 9.1];
 echo "<div class='resultado'>";
-echo "Menor de (5, 10, 2, 8) -> " . min(5, 10, 2, 8) . "<br>";
-echo "Menor do array [19.99, 15.50, 22.00] -> " . min($precos);
+echo "Menor de (25, 10, 1, 118) -> " . min(25, 10, 1, 118) . "<br>";
+echo "Menor do array [4.4, 8.5, 9.1] -> " . min($precos);
 echo "</div>";
 
 echo "<hr>";
@@ -94,7 +94,7 @@ echo "<hr>";
 // --- EXEMPLO 10 ---
 echo "<h3>Exemplo 10: sqrt() (Raiz Quadrada)</h3>";
 echo "<div class='resultado'>";
-echo "sqrt(9) -> " . sqrt(9) . "<br>";
-echo "sqrt(100) -> " . sqrt(100);
+echo "sqrt(16) -> " . sqrt(16) . "<br>";
+echo "sqrt(144) -> " . sqrt(144);
 echo "</div>";
 ?>

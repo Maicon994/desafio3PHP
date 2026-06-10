@@ -44,18 +44,18 @@ echo "Daqui a 10 dias será: " . $hoje->format('d/m/Y') . "<br>";
 
 // Subtrai 1 mês
 $hoje->modify('-1 month');
-echo "Um mês atrás (a partir da data modificada) era: " . $hoje->format('d/m/Y');
+echo "Um mês atrás era: " . $hoje->format('d/m/Y');
 echo "</div>";
 
 echo "<hr>";
 
 // --- EXEMPLO 4 ---
 echo "<h3>Exemplo 4: diff()</h3>";
-$data_nascimento = new DateTime('1990-05-15');
+$data_nascimento = new DateTime('2008-04-27');
 $hoje = new DateTime();
 $intervalo = $hoje->diff($data_nascimento);
 
-echo "<p>Calculando a diferença entre hoje e 15/05/1990:</p>";
+echo "<p>Calculando a diferença entre hoje e 27/04/2008:</p>";
 echo "<div class='resultado'>";
 echo "Você tem " . $intervalo->y . " anos.<br>";
 echo "Diferença total de dias: " . $intervalo->days;
