@@ -42,11 +42,6 @@ echo "</div>";
 
 echo "<hr>";
 
-
-// ==========================================
-// FUNÇÕES ESSENCIAIS DE ARRAY
-// ==========================================
-
 // --- ARRAY 1 ---
 echo "<h3 class='array'>Exemplo 1: count()</h3>";
 $frutas = ["Maçã", "Banana", "Laranja"];
